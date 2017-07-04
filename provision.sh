@@ -11,6 +11,7 @@ SPARK_IMAGE=gettyimages/spark:2.0.2-hadoop-2.7
 
 DRIVER_OPTIONS="\
 --driver amazonec2 \
+--amazonec2-private-address-only=true \
 --amazonec2-vpc-id $VPC_ID \
 --amazonec2-zone $ZONE \
 --amazonec2-region $REGION \
